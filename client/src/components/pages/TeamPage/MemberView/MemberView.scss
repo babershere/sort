@@ -1,0 +1,51 @@
+@import "scss/variables";
+
+:local(.header) {
+  > h2 {
+    display: flex;
+    align-items: baseline;
+    > .group {
+      font-size: 18px;
+      font-weight: lighter;
+      padding: 0px 10px;
+      color: #aaa;
+    }
+  }
+}
+
+:local(.body) {
+  padding: 0px;
+  > .switch-buffer {
+    height: 60px;
+  }
+
+  > .switch-table {
+    > .main {
+      border: none;
+    }
+  }
+}
+
+:local(.scriptsTab) {
+}
+
+:local(.scriptsTab) {
+}
+
+:local(.contactInfo) {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  > div {
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+    input, span, button {
+      margin-left: 5px;
+    }
+  }
+}

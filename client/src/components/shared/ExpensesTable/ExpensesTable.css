@@ -1,0 +1,5 @@
+:local(.table) {
+  margin: 0px;
+  width: 100%; }
+  :local(.table) > tbody > tr > td.empty {
+    text-align: center; }

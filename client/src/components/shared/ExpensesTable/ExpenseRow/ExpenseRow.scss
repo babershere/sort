@@ -1,0 +1,36 @@
+@import "scss/variables";
+
+:local(.row) {
+  > td {
+    > input {
+      width: 100%;
+    }
+    > select {
+      width: 110px;
+    }
+  }
+  > td.checkbox {
+    width: 1px;
+    > input.checkbox {
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  > td.photos {
+    > .photo-link {
+      text-decoration: none;
+      color: $accentColor;
+      &:not(:last-child) {
+        margin-right: 4px;
+        &::after {
+          content: ',';
+        }
+      }
+    }
+  }
+
+  > td.icons {
+    width: 108px;
+  }
+}

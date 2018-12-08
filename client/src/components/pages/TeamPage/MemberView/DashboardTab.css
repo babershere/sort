@@ -1,0 +1,16 @@
+:local(.dashboardTab) {
+  padding: 10px; }
+  :local(.dashboardTab) > .expenses > .header {
+    padding: 0px; }
+  :local(.dashboardTab) > .expenses > .actions {
+    display: flex;
+    justify-content: space-between; }
+    :local(.dashboardTab) > .expenses > .actions > div {
+      display: flex;
+      align-items: center; }
+      :local(.dashboardTab) > .expenses > .actions > div > div, :local(.dashboardTab) > .expenses > .actions > div > .button {
+        margin-right: 5px; }
+      :local(.dashboardTab) > .expenses > .actions > div .button {
+        min-width: auto; }
+      :local(.dashboardTab) > .expenses > .actions > div .select {
+        width: 200px; }

@@ -1,0 +1,33 @@
+:local(.detailsCell) {
+  width: 1px; }
+  :local(.detailsCell) > .button {
+    background-color: #a0a9b0;
+    min-width: inherit;
+    padding: 12px; }
+
+    .searchBar label {
+      margin-bottom: 0;
+    }
+
+    .searchBar .main {
+      padding-top: 0;
+    }
+  
+    .searchBar .main div {
+      flex: 1 1;
+    }
+
+    .searchBar div.select label {
+      padding: 4px 0px;
+      position: initial;
+    }
+  
+    .searchBar .main input {
+      width: 100%;
+    }
+  
+    .searchBar button {
+      margin-top: 2%;
+      line-height: 1;
+      height: 38px !important;
+    }

@@ -1,0 +1,22 @@
+:local(.row) > td > input {
+  width: 100%; }
+
+:local(.row) > td > select {
+  width: 110px; }
+
+:local(.row) > td.checkbox {
+  width: 1px; }
+  :local(.row) > td.checkbox > input.checkbox {
+    position: relative;
+    top: 2px; }
+
+:local(.row) > td.photos > .photo-link {
+  text-decoration: none;
+  color: #ff7d38; }
+  :local(.row) > td.photos > .photo-link:not(:last-child) {
+    margin-right: 4px; }
+    :local(.row) > td.photos > .photo-link:not(:last-child)::after {
+      content: ','; }
+
+:local(.row) > td.icons {
+  width: 108px; }

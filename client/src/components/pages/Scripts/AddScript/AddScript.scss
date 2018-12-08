@@ -1,0 +1,40 @@
+@import "scss/variables";
+
+:local(.container) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+:local(.body) {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    > .button {
+      width: 200px;
+      margin: 0 auto;
+    > .input {
+      padding: 8px;
+      margin: 10% !important;
+    }}}
+
+:local(.body) {
+    > .form {
+        max-width: none !important;
+        align-items: flex-start !important;
+    
+    > table {
+        border-spacing: 25px !important;
+        border-collapse: separate;
+    
+    > .input {
+        width: 400px !important;
+        margin: 10% !important;
+        
+    }
+    
+  }}}

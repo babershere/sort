@@ -1,0 +1,9 @@
+:local(.summary) {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #dfe1e2; }
+  :local(.summary) > .summary-item {
+    flex: 1; }
+    :local(.summary) > .summary-item:not(:last-child) {
+      border-right: 1px solid #dfe1e2; }

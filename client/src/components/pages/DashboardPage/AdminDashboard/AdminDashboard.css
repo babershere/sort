@@ -1,0 +1,53 @@
+:local(.body) > .graph {
+  height: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 #afafc5; }
+
+:local(.body) > .cardStack > .cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; }
+  :local(.body) > .cardStack > .cards > .card {
+    box-shadow: 0 1px 2px 0 #afafc5;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    :local(.body) > .cardStack {
+      width: 90%;
+      margin: 0 auto;
+      background: #fff;
+      padding: 10px 50px;
+    }
+    :local(.body) > .cardStack > .cards > .card .title {
+      font-size: 10px; }
+  :local(.body) > .cardStack > .cards > .card-container {
+    flex: 1; }
+    :local(.body) > .cardStack > .cards > .card-container > h2 {
+      width: 95%;
+      margin: 0 auto;
+      font-weight: normal; }
+    :local(.body) > .cardStack > .cards > .card-container .table > tbody > tr > td > div {
+      display: inline-block;
+      vertical-align: middle; }
+    :local(.body) > .cardStack > .cards > .card-container .table > tbody > tr > td > .physician {
+      display: inline-block;
+      vertical-align: middle; }
+      :local(.body) > .cardStack > .cards > .card-container .table > tbody > tr > td > .physician > span {
+        display: block; }
+        :local(.body) > .cardStack > .cards > .card-container .table > tbody > tr > td > .physician > span.group {
+          color: #8c969f; }
+
+          :local(.body) > .cardStack > .cards > div > .content {
+            font-size: 50px;
+            line-height: initial;
+            height: 84px;
+          }
+
+
+          

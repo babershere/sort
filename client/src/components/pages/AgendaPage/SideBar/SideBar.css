@@ -1,0 +1,98 @@
+:local(.sideBar) {
+  height: 100%; }
+  :local(.sideBar) > .body {
+    box-shadow: 0 1px 2px 0 #afafc5;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    width: 360px;
+    height: calc(100% - 106.51px);
+    max-height: 778.68px;
+    background-color: #fff;
+    position: absolute;
+    height: initial !important;
+    top: 106.51px;
+    left: inherit;
+    right: 0 !important; }
+    :local(.sideBar) > .body.flipped {
+      left: 0px; }
+    :local(.sideBar) > .body:not(.flipped) {
+      right: 0px; }
+    @media screen and (min-width: 1200px) {
+      :local(.sideBar) > .body.flipped {
+        left: inherit;
+        right: calc(50% + 190px); }
+      :local(.sideBar) > .body:not(.flipped) {
+        right: inherit;
+        left: calc(50% + 190px); } }
+    :local(.sideBar) > .body > .header {
+      background-color: #f6f8fa;
+      padding: 20px; }
+      :local(.sideBar) > .body > .header > h2 {
+        margin: 0;
+        font-weight: normal;
+        color: #ff7d38; }
+      :local(.sideBar) > .body > .header > span {
+        display: block; }
+        :local(.sideBar) > .body > .header > span.label {
+          margin-top: 20px;
+          font-weight: bold; }
+      :local(.sideBar) > .body > .header > .icon {
+        position: absolute;
+        top: 10px;
+        right: 10px; }
+    :local(.sideBar) > .body > .visits {
+      flex: 1;
+      overflow-y: scroll; }
+      :local(.sideBar) > .body > .visits > .visit > .physician {
+        padding: 10px;
+        padding-left: 20px;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee; }
+        :local(.sideBar) > .body > .visits > .visit > .physician > .line {
+          margin: 10px 0; }
+          :local(.sideBar) > .body > .visits > .visit > .physician > .line > span {
+            display: block; }
+            :local(.sideBar) > .body > .visits > .visit > .physician > .line > span.name {
+              font-size: 20px;
+              color: #000; }
+            :local(.sideBar) > .body > .visits > .visit > .physician > .line > span > .fa {
+              margin-right: 10px; }
+      :local(.sideBar) > .body > .visits > .visit > .notes > .title {
+        padding: 10px;
+        padding-left: 20px;
+        background-color: #f6f8fa; }
+    :local(.sideBar) > .body > button > .fa {
+      margin-right: 10px; }
+  :local(.sideBar) > .overlay {
+    z-index: 1;
+    height: 130%;
+    cursor: pointer;
+    background-color: #00000033; }
+
+    .addVisitNote {
+      border-radius: 10px;
+      padding: 2px 5px;
+      min-width: initial;
+    }
+
+    .addVisitNote span {
+      margin-right: 0 !important;
+    }
+
+#visitNotesTab table {border-spacing: 15px; margin: 0; box-shadow: none; width: 100%;}
+.vt {box-shadow: 0 1px 2px 0 #afafc5; border-radius: 8px; width: 90%; margin: 0 auto; margin-bottom: 2px;}
+#visitNotesTab thead {background-color: #f7f9fb;}
+#visitNotesTab td {text-align: left; padding: 2% 3%;}
+#visitNotesTab th {text-align: left; display: flex; padding: 5px 10px;}
+#visitNotesTab .userImage {width: 25px; height: 25px;}
+#visitNotesTab tr {padding: 1%;}
+#visitNotesTab .visitNoteName {line-height: 2.7em; font-weight: lighter;}
+
+.visitNoteDateTime {font-size: .8em; width: 90%; margin: 0 auto;
+    color: #9fa9b1;}
+.visitNoteDateTime td {padding: 0% !important;}
+
+.visitNoteDateTime td div {display: inline;}
+
+.visitNotes span {display: inline !important;}

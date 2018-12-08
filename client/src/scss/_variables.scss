@@ -1,0 +1,216 @@
+// Variables
+$gradient: linear-gradient(to right, #42a8fd, #107ede);
+$borderColor: #dfe1e2;
+$editColor: #0392f5;
+$deleteColor: #ef4836;
+$backgroundColor: #f6f8fa;
+$pageColor: #fafbfc;
+$lightTextColor: #8c969f;
+$textColor: #666;
+$grey: #a0a9b0;
+
+$accentColor: #ff7d38;
+$activeColor: #ff7d38;
+
+$profile: #e0c31d;
+
+$fullScreen: 1200px;
+$smallScreen: 600px;
+
+// Mixins
+@mixin detailHeader {
+  @include bottomShadow;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  z-index: 999;
+}
+
+@mixin navItem($color) {
+  color: $color;
+  &.active {
+    background-color: rgba($color, .05);
+  }
+  > .icon {
+    background-color: rgba($color, .2);
+    color: $color;
+  }
+}
+
+@mixin input {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 8px;
+  height: 36px;
+}
+
+@mixin label {
+  display: block;
+  font-weight: bolder;
+}
+
+@mixin underline {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+@mixin shadow {
+  box-shadow: 0 1px 2px 0 #afafc5;
+}
+
+@mixin formContainer {
+  @include shadow;
+  width: 90%;
+  background-color: $pageColor;
+  padding: 10px;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 20px;
+  > .form {
+    max-width: 400px;
+    margin: 20px auto;
+    > .buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}
+
+@mixin grid($columns) {
+  display: grid;
+  grid-template-columns: $columns;
+  .cell {
+    display: flex;
+    align-items: center;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    > span {
+      color: #000;
+    }
+  }
+
+  .icon {
+    margin-left: 16px;
+  }
+}
+
+@mixin bottomShadow {
+  box-shadow: 0 1px 5px 0 rgba(#969696, 0.37);
+}
+
+@mixin select {
+  @include input;
+  padding: 0;
+  height: 36px;
+}
+
+@mixin input-wide {
+  border: none;
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  @include underline;
+}
+
+@mixin button {
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  max-width: 150px;
+  transition: all 100ms ease-in-out;
+  &:hover {
+    background-color: darken(green, 20%);
+  }
+}
+
+@mixin delete {
+  background-color: red;
+  &:hover {
+    background-color: darken(red, 20%);
+  }
+}
+
+@mixin button-delete {
+  @include button;
+  @include delete
+}
+
+@mixin button-wide {
+  @include button;
+  max-width: inherit;
+  width: 100%;
+}
+
+@mixin button-cancel {
+  @include button;
+  color: #888;
+  background-color: #f8f8f8;
+  &:hover {
+    background-color: darken(#f8f8f8, 20%);
+    color: darken(#888, 20%);
+  }
+}
+
+@mixin button-wide-cancel {
+  @include button-cancel;
+  max-width: inherit;
+  width: 100%;
+}
+
+@mixin button-wide-delete {
+  @include button-wide;
+  @include delete;
+}
+
+@mixin modal {
+  width: 50%;
+  max-width: 400px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+@mixin sideBarPosition {
+  &.flipped {
+    left: 0px;
+  }
+  &:not(.flipped) {
+    right: 0px;
+  }
+  @media screen and (min-width: $fullScreen) {
+    &.flipped {
+      left: inherit;
+      right: calc(50% + 190px);
+    }
+    &:not(.flipped) {
+      right: inherit;
+      left: calc(50% + 190px);
+    }
+  }
+}
+
+@mixin avatar {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+@mixin hidden {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 1px;
+  z-index: -1;
+}

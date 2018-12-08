@@ -1,0 +1,114 @@
+
+.flex-grid {
+  display: flex !important;
+}
+
+#contactInfo {display: initial !important;}
+
+#contactInfo:nth-child(1) {
+  width: 60%;
+}
+
+#patientView .flex-row {
+  display: flex;
+}
+
+#patientView .flex-row .col:nth-child(1) {
+  flex: 2.5;
+}
+
+#patientView .flex-row .col:nth-child(2) {
+  flex: 1
+}
+
+#patientView #contactInfo:nth-child(2) {
+  width: 20%;
+    position: relative;
+    padding-top: 5%;
+    display: flex !important;
+}
+
+#contactInfo .blue {
+  color: #00b1ec !important;
+  font-weight: lighter;
+}
+
+.editButton {
+  line-height: 1;
+  height: 38px !important;
+}
+
+
+:local(.header) > h2 {
+  display: flex;
+  align-items: baseline; }
+  :local(.header) > h2 > .group {
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 0px 10px;
+    color: #aaa; }
+
+:local(.body) {
+  padding: 0px; }
+  :local(.body) > .switch-buffer {
+    height: 60px; }
+  :local(.body) > .switch-table > .main {
+    border: none; }
+
+:local(.scriptsTab) {
+  padding: 0px 10px; }
+  :local(.scriptsTab) .table {
+    width: 100%; }
+
+:local(.notesTab) {
+  padding: 10px; }
+  :local(.notesTab) .span, :local(.notesTab) .input {
+    display: block;
+    max-width: 600px;
+    padding: 8px;
+    line-height: 30px; }
+  :local(.notesTab) > .button {
+    margin-bottom: 20px; }
+  :local(.notesTab) > .notes {
+    border-top: 1px solid #dfe1e2;
+    border-bottom: 1px solid #dfe1e2; }
+
+:local(.insuranceTab) {
+  padding: 20px 10px;
+  display: flex; }
+  :local(.insuranceTab) > form {
+    flex: 1;
+    margin: 0px 10px; }
+
+:local(.contactInfo) {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px; }
+  :local(.contactInfo) > div {
+    min-height: 36px;
+    display: flex;
+    align-items: center; }
+    :local(.contactInfo) > div:not(:last-child) {
+      margin-bottom: 5px; }
+    :local(.contactInfo) > div input, :local(.contactInfo) > div span, :local(.contactInfo) > div button {
+      margin-left: 5px; }
+    :local(.contactInfo) > div.transfer > div {
+      margin-right: 10px; }
+
+      .insuranceTab table {
+        display: inline-block;
+    width: 50%;
+    padding: 0 5%;
+      }
+
+      .insuranceTab label {font-weight: bold;}
+
+
+      /* Info/Notes Tab */
+      .infoNotesTab {
+        display: flex;
+      }
+      .infoNotesTab div:not(.NoteModalPatient) {
+        flex: 1 1;
+      }

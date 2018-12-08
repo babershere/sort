@@ -1,0 +1,59 @@
+
+.action-box.productSearch .main div {width: 70%;}
+
+
+
+  .react-pagination-table table {
+    -webkit-box-shadow: 0 1px 2px 0 #afafc5;
+    box-shadow: 0 1px 2px 0 #afafc5;
+    border-radius: 5px;
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+
+  .react-pagination table td {
+    white-space: nowrap;
+    border: 1px solid #dfe1e2;
+    padding: 10px;
+    line-height: 1.42857143;
+    vertical-align: top;
+  }
+
+  .react-pagination-table tbody tr {
+    height: 61px;
+  }
+
+  .pagination-status {
+    margin-bottom: 150px;
+  }
+
+  .pagination-status li {
+    float: left;
+    list-style-type: none;
+    margin: 0 6px;
+  }
+
+  .pagination-status li button {
+    padding: 7px 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+  }
+
+  .react-pagination-table tbody tr:nth-child(odd) {
+    background-color: #f6f8fa;
+  }
+
+  .react-pagination-table tr td {
+    white-space: nowrap;
+    border: 1px solid #dfe1e2;
+    padding: 10px;
+  }
+
+  :local(.detailsCell) {
+    width: 1px; }
+    :local(.detailsCell) > .button {
+      background-color: #a0a9b0;
+      min-width: inherit;
+      padding: 12px; }

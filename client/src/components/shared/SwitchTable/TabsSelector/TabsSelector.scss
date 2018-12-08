@@ -1,0 +1,27 @@
+@import "scss/variables";
+
+:local(.tabs) {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  display: flex;
+  > .tab {
+    padding: 14px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-top: 4px solid transparent;
+    &.active {
+      background-color: #fff;
+      border: 1px solid $borderColor;
+      border-top: 4px solid $activeColor;
+      border-bottom: none;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+    &:not(.active) {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+
+#physicianView #contactInfo:nth-child(1) {
+  width: 50%;
+}
+
+#physicianView #contactInfo:nth-child(3) {
+  padding-left: 5%;
+}
+
+.physicianNotes .nt {
+  width: 90% !important;
+}
+
+#physWarning {
+  background-color: #e2f3f9;
+  border: 1px solid #00b1ec;
+  border-radius: 2px;
+  padding: 2% 5%;
+  margin: 1% 0;
+  margin-right: 10%;
+  word-wrap: break-word;
+  max-width: 350px;
+}
+
+.access {
+  line-height: 1;
+}
+
+.access span {
+  line-height: 1 !important;
+}
+
+.chartjs-size-monitor {
+  position: relative !important;
+}
+
+#physicianView #address {
+  line-height: 20px;
+}
+
+#physWarning span {
+  line-height: 1.5em;
+}
+
+:local(.header) > h2 {
+  display: flex;
+  align-items: baseline; }
+  :local(.header) > h2 > .group {
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 0px 10px;
+    color: #aaa;
+    cursor: pointer; }
+
+:local(.body) {
+  padding: 0px; }
+
+:local(.contactInfo) {
+  display: flex;
+  border-bottom: 1px solid #dfe1e2;
+  padding: 10px; }
+  :local(.contactInfo) > div {
+    min-height: 36px;
+    display: flex;
+    align-items: center; }
+  :local(.contactInfo) > .name {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; }
+    :local(.contactInfo) > .name > div {
+      display: flex;
+      align-items: center;
+      height: 40px; }
+      :local(.contactInfo) > .name > div span, :local(.contactInfo) > .name > div input, :local(.contactInfo) > .name > div select {
+        margin-left: 5px; }
+
+:local(.miscInfo) {
+  display: flex; }
+  :local(.miscInfo) > .grid, :local(.miscInfo) > .revenue {
+    padding: 20px 10px;
+    padding-bottom: 60px; }
+  :local(.miscInfo) > .grid {
+    flex: 1;
+    display: grid;
+    margin: 1% 3%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px; }
+    :local(.miscInfo) > .grid .cell {
+      display: flex;
+      align-items: center; }
+    :local(.miscInfo) > .grid .item {
+      display: flex;
+      flex-direction: column; }
+      :local(.miscInfo) > .grid .item > span {
+        color: #000; }
+    :local(.miscInfo) > .grid .icon {
+      margin-left: 16px; }
+    :local(.miscInfo) > .grid > .item > span {
+      line-height: 40px; }
+  :local(.miscInfo) > .revenue {
+    width: 400px;
+    border-left: 1px solid #dfe1e2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px; }
+    :local(.miscInfo) > .revenue > .amount {
+      padding-top: 5px;
+      font-size: 30px;
+      color: black; }
+
+:local(.notesTab) {
+  padding: 10px; }
+  :local(.notesTab) > .header {
+    padding-top: 20px;
+    padding-bottom: 30px; }
+  :local(.notesTab) > .visits {
+    border-top: 1px solid #dfe1e2; }
+
+:local(.scriptsTab) {
+  padding: 10px; }
+
+:local(.onlineTab) {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-row-gap: 20px;
+  justify-content: space-around; }
+  :local(.onlineTab) .cell {
+    display: flex;
+    align-items: center; }
+  :local(.onlineTab) .item {
+    display: flex;
+    flex-direction: column; }
+    :local(.onlineTab) .item > span {
+      color: #000; }
+  :local(.onlineTab) .icon {
+    margin-left: 16px; }

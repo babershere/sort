@@ -1,0 +1,62 @@
+@import "scss/variables";
+
+:local(.body) {
+  > .graph {
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    @include shadow;
+  }
+
+  > .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    > .card {
+      @include shadow;
+      background-color: #fff;
+      border-radius: 5px;
+      width: 140px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        font-size: 10px;
+      }
+    }
+
+    > .card-container {
+      flex: 1;
+      > h2 {
+        width: 95%;
+        margin: 0 auto;
+        font-weight: normal;
+      }
+
+      .table {
+        > tbody {
+          > tr {
+            > td {
+              > div {
+                display: inline-block;
+                vertical-align: middle;
+              }
+              > .physician {
+                display: inline-block;
+                vertical-align: middle;
+                > span {
+                  display: block;
+                  &.group {
+                    color: $lightTextColor;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "scss/variables";
+
+:local(.table) {
+}
+
+:local(.detailsCell) {
+  width: 1px;
+  > .button {
+    background-color: #a0a9b0;
+    min-width: inherit;
+    padding: 12px;
+  }
+}

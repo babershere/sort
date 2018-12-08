@@ -1,0 +1,330 @@
+
+.numberCircle {
+border-radius: 50%;
+  padding: 2px 8px;
+  background: #ddd;
+  color: #fff;  
+  text-align: center;
+}
+
+#scriptViewHead table {
+    background-color: transparent !important;
+    width: 100%;
+    box-shadow: none;
+    margin-bottom: 0;
+    border-collapse: initial;
+    border-spacing: 15px;
+}
+
+#scriptViewHead button {
+    -webkit-transition: all 500ms !important;
+    transition: all 500ms !important;
+}
+
+#scriptView {
+    background-color: #fff; box-shadow: none !important;
+}
+
+button#white {
+    background-color: #fff !important;
+    color: #2b2b2b;
+}
+
+#patientWarning {
+    background-color: #fff4ed;
+    border: 1px solid #ff8840;
+    border-radius: 2px;
+    padding: 4% 7%;
+    margin: 1% 0;
+    margin-right: 10%;
+    width: 175%;
+    word-wrap: break-word;
+    max-width: 350px;
+    font-size: 15px;
+    color: #1d1d1d;
+  }
+
+  #patientWarning span, #physicianWarning span {
+      line-height: 20px !important;
+  }
+
+  #physicianWarning {
+    background-color: #e2f3f9;
+    border: 1px solid #00b1ec;
+    border-radius: 2px;
+    padding: 4% 7%;
+    margin: 1% 0;
+    margin-right: 10%;
+    width: 175%;
+    word-wrap: break-word;
+    max-width: 350px;
+    font-size: 15px;
+    color: #1d1d1d;
+  }
+  
+
+#scriptViewHead button span {line-height: 0 !important;}
+
+#scriptViewHead h2 {display: inline;}
+
+#scriptView .container {
+    width: 100% !important;
+}
+
+.pouch {
+    width: 70%;
+    text-align: right;
+    padding-bottom: 5px
+}
+
+.pouch input {margin: 0 7px;}
+
+#scriptViewHead .inactiveStatus {
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    color: #000;
+    background-color: #fff;
+    padding: 12px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all 150ms;
+    -o-transition: all 150ms;
+    transition: all 150ms;
+    border: 1px solid #dfe1e2;
+    min-width: initial;
+}
+#scriptViewHead .currentStatus {
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #ff7d38;
+  padding: 12px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 150ms;
+  border: 1px solid #dfe1e2;
+  min-width: initial;
+}
+
+.container {
+    width: 100% !important;
+}
+
+#scriptView td {width: 200px !important;} 
+
+h3 {
+    color: #25292d;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 1% 0;
+}
+
+.actions {
+    padding: 0 2%;
+    margin-bottom: 6%;
+}
+
+.actions table {
+    border-collapse: separate;
+    border-spacing: 15px;
+    margin-left: 5%;
+    margin-top: 0;
+}
+
+.actions input, .actions select {
+    min-width: 450px;
+}
+
+
+
+.actions button {
+    box-shadow: 0px 2px 15px 0px #b9b7b7;
+    font-weight: 100;
+    min-width: initial;
+}
+
+button.search, button#white {
+    box-shadow: 0px 3px 12px 0px #d6d3d3;
+}
+
+.actions p {
+    color: #a7a8a9;
+    font-weight: lighter;
+    font-size: .9em;
+}
+
+.actions label {
+    display: inline-block;
+}
+
+.actions p.large {
+    font-size: 1.1em;
+    margin: 1% 0;
+}
+
+.actions td.field {
+    text-align: right;
+}
+
+button.orange {
+    background-color: #ff7d38;
+}
+
+table {
+    border-spacing: 0;
+    margin: 2% 0;
+}
+
+:local(.body) > td {
+    width: 200px !important;
+}
+
+:local(.body) {
+    width: 90%;
+}
+:local(.header) {
+    width: 95%;
+    margin: 0 auto;
+}
+:local(.header) > table {
+    width: 100% !important;
+}
+:local(.body) > table {
+    width: 70% !important;
+}
+:local(.body) > table > td {
+    width: 200px !important;
+}
+
+:local(.scriptView) > table > td {
+    width: 200px !important;
+    margin: 50px !important;
+}
+
+td span {
+    line-height: 30px !important;
+}
+
+td {
+    font-weight: lighter;
+}
+
+td.field {
+    color: #909090;
+    font-size: .9em;
+}
+
+td.value {
+    color: #333;
+    font-weight: normal;
+}
+
+td.setValue a, td.setValue a:visited {
+    color: #00b1ec;
+}
+
+#scriptViewColumns {
+    display: inline-block;
+}
+
+.scriptViewColumn1 {
+    display: inline;
+    float: left;
+}
+
+.scriptViewColumn2 {
+    display: inline-block;
+}
+
+#symptoms {
+    border-color: #e3e5e6;
+    border-radius: 10px;
+    padding: 5%;
+    width: 175%;
+    min-height: 90px;
+    margin: 2% 0;
+    max-width: 350px;
+    word-wrap: break-word;
+}
+
+
+/* Attachments Tab */
+:local(.attachmentsTab) {
+    padding: 10px; }
+    :local(.attachmentsTab) .span, :local(.notesTab) .input {
+      display: block;
+      max-width: 600px;
+      padding: 8px;
+      line-height: 30px; }
+    :local(.attachmentsTab) > .button {
+      margin-bottom: 20px; }
+    :local(.attachmentsTab) > .notes {
+      border-top: 1px solid #dfe1e2;
+      border-bottom: 1px solid #dfe1e2; }
+
+      canvas {
+          display: block !important;
+          margin: 2% auto;
+      }
+
+      nav#prev-next {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: -750px;
+      }
+
+
+/* Notes Tab */
+.main {padding: 2%;}
+
+#notesTab table {border-spacing: 15px; margin: 0; box-shadow: none; width: 100%;}
+.nt {margin: 20px auto; box-shadow: 0 1px 2px 0 #afafc5; border-radius: 8px; width: 60%; margin: 2% 0; margin-bottom: 2px;}
+#notesTab thead {background-color: #f7f9fb;}
+#notesTab td {text-align: left; padding: 2% 3%;}
+#notesTab th {text-align: left; display: flex; padding: 5px 10px;}
+#notesTab .userImage {width: 25px; height: 25px;}
+#notesTab tr {padding: 1%;}
+#notesTab .noteName {line-height: 2.7em; font-weight: lighter;}
+
+.noteDateTime {font-size: .8em;
+    color: #9fa9b1;}
+.noteDateTime td {padding: 0% !important;}
+
+.noteDateTime td div {display: inline;}
+
+.notes span {display: inline !important;}
+
+/* RX History Tab */
+.rxHistoryTab table {margin: 0; width: 100%}
+
+/* Statuses Tab */
+
+.statusesTab {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 0;
+    display: flex;
+}
+
+.statusDateTime div {
+    display: inline;
+}
+
+.userImage {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 60px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 60px;
+    -moz-background-clip: padding;
+    border-radius: 60px;
+    background-clip: padding-box;
+    margin: 7px 10px 0 5px;
+    background-size: cover;
+    background-position: center center;
+}
+

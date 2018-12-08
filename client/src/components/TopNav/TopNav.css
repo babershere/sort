@@ -1,0 +1,4 @@
+:local(.topNav) {
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 1px 2px 0 #afafc5; }

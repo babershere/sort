@@ -1,0 +1,7 @@
+@import "scss/variables";
+
+:local(.topNav) {
+  width: 100%;
+  z-index: 999;
+  @include shadow;
+}

@@ -1,0 +1,38 @@
+:local(.header) > h2 {
+  display: flex;
+  align-items: baseline; }
+  :local(.header) > h2 > .group {
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 0px 10px;
+    color: #aaa; }
+
+:local(.body) {
+  padding: 0px; }
+  :local(.body) > .switch-buffer {
+    height: 60px; }
+  :local(.body) > .switch-table > .main {
+    border: none; }
+
+:local(.contactInfo) {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px; }
+  :local(.contactInfo) > div {
+    min-height: 36px;
+    display: flex;
+    align-items: center; }
+    :local(.contactInfo) > div:not(:last-child) {
+      margin-bottom: 5px; }
+    :local(.contactInfo) > div input, :local(.contactInfo) > div span, :local(.contactInfo) > div button {
+      margin-left: 5px; }
+
+      :local(.contactInfo) img {
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+      }
+      :local(.contactInfo) {
+        flex: 1 1;
+      }

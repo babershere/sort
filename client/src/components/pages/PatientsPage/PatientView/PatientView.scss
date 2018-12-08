@@ -1,0 +1,83 @@
+@import "scss/variables";
+
+:local(.header) {
+  > h2 {
+    display: flex;
+    align-items: baseline;
+    > .group {
+      font-size: 18px;
+      font-weight: lighter;
+      padding: 0px 10px;
+      color: #aaa;
+    }
+  }
+}
+
+:local(.body) {
+  padding: 0px;
+  > .switch-buffer {
+    height: 60px;
+  }
+
+  > .switch-table {
+    > .main {
+      border: none;
+    }
+  }
+}
+
+:local(.scriptsTab) {
+  padding: 0px 10px;
+  .table {
+    width: 100%;
+  }
+}
+
+:local(.notesTab) {
+  padding: 10px;
+  .span, .input {
+    display: block;
+    max-width: 600px;
+    padding: 8px;
+    line-height: 30px;
+  }
+  > .button {
+    margin-bottom: 20px;
+  }
+  > .notes {
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+  }
+}
+
+:local(.insuranceTab) {
+  padding: 20px 10px;
+  display: flex;
+  > form {
+    flex: 1;
+    margin: 0px 10px;
+  }
+}
+
+:local(.contactInfo) {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  > div {
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+    input, span, button {
+      margin-left: 5px;
+    }
+    &.transfer {
+      > div {
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+:local(.tabs) {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  display: flex; }
+  :local(.tabs) > .tab {
+    padding: 14px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-top: 4px solid transparent; }
+    :local(.tabs) > .tab.active {
+      background-color: #fff;
+      border: 1px solid #dfe1e2;
+      border-top: 4px solid #ff7d38;
+      border-bottom: none;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px; }
+    :local(.tabs) > .tab:not(.active) {
+      cursor: pointer; }

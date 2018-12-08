@@ -1,0 +1,14 @@
+@import "scss/variables";
+
+:local(.modal) {
+  > .body {
+    > .line {
+      display: flex;
+      align-items: center;
+      > select {
+        width: 175px;
+        min-width: inherit;
+      }
+    }
+  }
+}

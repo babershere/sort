@@ -1,0 +1,69 @@
+:local(.titleBar) {
+  width: 100%;
+  background: #fff;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between; }
+  :local(.titleBar) > .title, :local(.titleBar) > .options {
+    color: #000;
+    display: flex;
+    align-items: center; }
+  :local(.titleBar) > .title > a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center; }
+    :local(.titleBar) > .title > a > span.fa {
+      color: #ff7d38;
+      padding: 2px;
+      font-size: 20px; }
+  :local(.titleBar) > .title > .react-spinner {
+    color: #000;
+    width: 20px;
+    height: 20px;
+    top: 30%;
+    left: 20%;
+    transition: all 250ms ease-in-out;
+    opacity: 0; }
+    :local(.titleBar) > .title > .react-spinner.loading {
+      opacity: 1; }
+    :local(.titleBar) > .title > .react-spinner > .react-spinner_bar {
+      background-color: #444; }
+  :local(.titleBar) > .options {
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    transition: 150ms; }
+    :local(.titleBar) > .options:hover, :local(.titleBar) > .options.show {
+      background-color: #eee; }
+    :local(.titleBar) > .options span.fa {
+      padding: 4px 8px;
+      font-size: 16px;
+      color: #aaa; }
+    :local(.titleBar) > .options > .dropdown {
+      z-index: 999;
+      display: none;
+      background-color: #fff;
+      position: absolute;
+      top: 38px;
+      right: 0px;
+      width: 180px;
+      box-shadow: 0 1px 2px 0 #afafc5; }
+      :local(.titleBar) > .options > .dropdown.show {
+        display: block; }
+      :local(.titleBar) > .options > .dropdown > .option {
+        transition: 150ms; }
+        :local(.titleBar) > .options > .dropdown > .option:not(:last-child) {
+          border-bottom: 1px solid #eaeaea; }
+        :local(.titleBar) > .options > .dropdown > .option:hover {
+          background-color: #eaeaea; }
+        :local(.titleBar) > .options > .dropdown > .option .fa {
+          color: #ff7d38; }
+        :local(.titleBar) > .options > .dropdown > .option > span, :local(.titleBar) > .options > .dropdown > .option > a {
+          padding: 6px;
+          width: 100%;
+          display: block;
+          text-decoration: none;
+          color: inherit; }
+          
+          .options.show {display: inherit !important;}

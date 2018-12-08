@@ -1,0 +1,22 @@
+:local(.body) {
+  background-color: #fff;
+  padding: 10px; }
+  :local(.body) > .expenses > .header {
+    padding: 0px; }
+    :local(.body) > .expenses > .header > h2 {
+      margin: 0px;
+      margin-bottom: 40px; }
+  :local(.body) > .expenses > .actions {
+    display: flex;
+    justify-content: space-between; }
+    :local(.body) > .expenses > .actions > div {
+      display: flex;
+      align-items: center;
+      margin: 10px 0px; }
+      :local(.body) > .expenses > .actions > div button {
+        min-width: auto; }
+      :local(.body) > .expenses > .actions > div select {
+        width: 200px; }
+        @media only screen and (max-width: 600px) {
+          :local(.body) > .expenses > .actions > div select {
+            width: 125px; } }

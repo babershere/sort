@@ -1,0 +1,6 @@
+:local(.detailsCell) {
+  width: 1px; }
+  :local(.detailsCell) > .button {
+    background-color: #a0a9b0;
+    min-width: inherit;
+    padding: 12px; }

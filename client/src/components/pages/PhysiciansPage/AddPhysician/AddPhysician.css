@@ -1,0 +1,28 @@
+
+#addPhysician div.select {
+    margin-top: 7%;
+}
+
+#addPhysician .flex-grid:nth-child(1) .col:nth-child(1) {
+    border-right: 1px solid #ebeced;
+}
+
+#addPhysician .flex-grid:nth-child(2) {
+    border-top: 1px solid #ebeced;
+}
+
+form {
+    max-width: none !important;
+    align-items: initial !important;
+}
+
+#addPhysician .flex-grid {
+    display: flex;
+    width: 75% !important;
+}
+
+.col {
+    flex: 1;
+    padding: 0 3%;
+    padding-bottom: 3%;
+}

@@ -1,0 +1,15 @@
+@import "scss/variables";
+
+:local(.summary) {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid $borderColor;
+
+  > .summary-item {
+    flex: 1;
+    &:not(:last-child) {
+      border-right: 1px solid $borderColor;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+
+.addMember input {
+    max-width: 400px !important;
+}
+
+.addMember .check input {width: initial !important; margin: 1%;}
+.check label {display: inline;}

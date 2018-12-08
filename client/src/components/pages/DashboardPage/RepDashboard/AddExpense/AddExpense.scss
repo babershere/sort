@@ -1,0 +1,28 @@
+@import "scss/variables";
+
+:local(.body) {
+  > .form {
+    > .file-upload {
+      label {
+        padding: 12px 18px;
+      }
+    }
+
+    > .buttons > .button {
+      min-width: 125px;
+    }
+  }
+}
+
+:local(.photoList) {
+  margin: 10px 0px;
+  > .photo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0px 8px;
+  }
+}

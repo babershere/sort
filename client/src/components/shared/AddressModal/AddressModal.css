@@ -1,0 +1,6 @@
+:local(.modal) > .body > .line {
+  display: flex;
+  align-items: center; }
+  :local(.modal) > .body > .line > select {
+    width: 175px;
+    min-width: inherit; }

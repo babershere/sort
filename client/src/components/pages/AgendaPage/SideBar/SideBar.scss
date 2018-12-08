@@ -1,0 +1,86 @@
+@import "scss/variables";
+
+:local(.sideBar) {
+  // width: 100%;
+  // max-width:
+  height: 100%;
+  > .body {
+    @include shadow;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    width: 360px;
+    height: calc(100% - 106.51px);
+    max-height: 778.68px;
+    background-color: #fff;
+    position: absolute;
+    top: 106.51px;
+    @include sideBarPosition;
+    > .header {
+      background-color: #f6f8fa;
+      padding: 20px;
+      > h2 {
+        margin: 0;
+        font-weight: normal;
+        color: #ff7d38;
+      }
+      > span {
+        display: block;
+        &.label {
+          margin-top: 20px;
+          font-weight: bold;
+        }
+      }
+      > .icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+
+    > .visits {
+      flex: 1;
+      overflow-y: scroll;
+      > .visit {
+        > .physician {
+          padding: 10px;
+          padding-left: 20px;
+          border-top: 1px solid #eee;
+          border-bottom: 1px solid #eee;
+          > .line {
+            margin: 10px 0;
+            > span {
+              display: block;
+              &.name {
+                font-size: 20px;
+                color: #000;
+              }
+
+              > .fa {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        > .notes {
+          > .title {
+            padding: 10px;
+            padding-left: 20px;
+            background-color: #f6f8fa;
+          }
+        }
+      }
+    }
+
+    > button {
+      > .fa {
+        margin-right: 10px;
+      }
+    }
+  }
+  > .overlay {
+    z-index: 1;
+    cursor: pointer;
+    background-color: #00000033;
+  }
+}

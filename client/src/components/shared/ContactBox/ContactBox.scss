@@ -1,0 +1,18 @@
+@import "scss/variables";
+
+:local(.contactBox) {
+  width: 250px;
+  min-width: 150px;
+  > div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    &:not(:last-child) {
+      border-bottom: 1px solid $borderColor;
+    }
+    > .fa {
+      padding: 8px;
+      width: 32px;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+
+tr {
+    cursor: pointer !important;
+}
+
+.action-box .main {
+    justify-content: initial;
+}
+
+.scriptSearch {
+    margin-right: 15px !important;
+}
+
+.scriptSearch button, .btn-group>.btn {
+    padding: 10px 12px;
+    border-radius: 3px;
+    color: #000;
+    background-color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition: all 500ms !important;
+    -o-transition: all 500ms !important;
+    transition: all 500ms !important;
+    border: 1px solid #dfe1e2;
+}
+
+.scriptSearch button:focus, .btn-group>.btn.active {
+    color: #fff;
+    background-color: #ff7d38;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.scriptSearch button.search:focus {
+    color: #ff7d38; 
+    background-color: #fff;
+}
+
+.scriptSearch .action-box:first-child .main div:nth-child(4) label {padding: 0 !important;}
+
+.scriptSearch input.searchBar {margin-top: 0;}
+
+.scriptSearch label {
+    display: block;
+}
+
+.scriptSearch .searchBar {flex: initial !important;}
+.scriptSearch button.search {margin-top: 25px !important;}
+.scriptSearch button.search span {margin: 0 auto;}
+
+label.single.btn.btn-default {
+    border-radius: 5px !important;
+}
+
+button.first.btn.btn-default, label.first.btn.btn-default {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+button.last.btn.btn-default, label.last.btn.btn-default {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+.searchBar {margin-top: 24px;}
+.searchBar input {height: 40px;}
+
+.scriptList .main {
+    margin: 0 1%;
+}
+
+/* .scriptSearch label {
+    padding: 12px 15px;
+    border-radius: 3px;
+    color: #000;
+    background-color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition: all 150ms;
+    -o-transition: all 150ms;
+    transition: all 150ms;
+    border: 1px solid #dfe1e2;
+}
+
+.scriptSearch label .btn.btn-default.active {
+    color: #fff;
+    background-color: #ff7d38;
+}
+
+.scriptSearch label input {
+    display: none;
+} */
+
+
+html [type="button"] {
+    -webkit-appearance: initial !important;
+}

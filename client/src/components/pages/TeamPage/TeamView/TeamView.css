@@ -1,0 +1,27 @@
+:local(.detailsCell) {
+  width: 1px; }
+  :local(.detailsCell) > .button {
+    background-color: #a0a9b0;
+    min-width: inherit;
+    padding: 12px; }
+
+    .userTable table {margin-top: 0 !important;}
+
+.teamSearch label {
+  background-color: lightgray !important;
+  color: #fff !important;
+  border-radius: 5px;
+  min-width: 80px;
+  min-height: 40px;
+  margin-right: 20px;
+}
+
+.teamSearch button:focus, .teamSearch.btn-group > .btn.active {
+  background-color: gray !important;
+}
+
+.teamSearchInput label {margin-top: -32px !important;}
+
+.teamSearchInput div:nth-child(2), .teamSearchInput div:nth-child(3) {
+  margin-left: 15px;
+}

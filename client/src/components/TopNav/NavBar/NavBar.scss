@@ -1,0 +1,40 @@
+@import "scss/variables";
+
+:local(.navBar) {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  flex-wrap: wrap;
+  min-height: 63px;
+  > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    flex: 1;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    transition: 100ms;
+    @media only screen and (max-width: $smallScreen) {
+      padding: 5px;
+    }
+    &:not(:last-child) {
+      border-right: 1px solid #eaeaea;
+    }
+    &:hover {
+      background-color: #eee;
+    }
+    &.active {
+      background-color: $accentColor;
+      color: #fff;
+      > .icon {
+        background: #fff;
+        color: #444;
+      }
+    }
+  }
+}

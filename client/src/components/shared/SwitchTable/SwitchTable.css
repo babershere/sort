@@ -1,0 +1,6 @@
+:local(.switchContainer) {
+  border: 1px solid #dfe1e2;
+  position: relative; }
+  :local(.switchContainer) > .main {
+    background-color: #fff;
+    border-top: 1px solid #dfe1e2; }

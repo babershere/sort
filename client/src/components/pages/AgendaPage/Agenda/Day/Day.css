@@ -1,0 +1,29 @@
+:local(.day) {
+  box-sizing: border-box;
+  flex: 1;
+  height: 130px;
+  padding: 10px;
+  transition: 100ms; }
+  :local(.day):not(:last-child) {
+    border-right: 1px solid #eee; }
+  :local(.day).outside {
+    background-color: #fafafa; }
+  :local(.day).today {
+    background-color: #e2f8ff; }
+  :local(.day) > .icon {
+    background: #fff;
+    box-shadow: 0 1px 2px 0 #afafc5;
+    color: #999;
+    font-size: 10px;
+    padding: 6px;
+    width: 22px;
+    height: 22px;
+    margin-left: 0; }
+  :local(.day) > .rep-name {
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 150ms;
+    user-select: none; }
+    :local(.day) > .rep-name:hover {
+      text-decoration: underline; }

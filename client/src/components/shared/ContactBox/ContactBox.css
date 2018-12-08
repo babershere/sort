@@ -1,0 +1,12 @@
+:local(.contactBox) {
+  width: 250px;
+  min-width: 150px; }
+  :local(.contactBox) > div {
+    display: flex;
+    align-items: center;
+    height: 40px; }
+    :local(.contactBox) > div:not(:last-child) {
+      border-bottom: 1px solid #dfe1e2; }
+    :local(.contactBox) > div > .fa {
+      padding: 8px;
+      width: 32px; }

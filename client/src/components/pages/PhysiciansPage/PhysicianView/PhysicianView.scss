@@ -1,0 +1,91 @@
+@import "scss/variables";
+
+:local(.header) {
+  > h2 {
+    display: flex;
+    align-items: baseline;
+    > .group {
+      font-size: 18px;
+      font-weight: lighter;
+      padding: 0px 10px;
+      color: #aaa;
+    }
+  }
+}
+
+:local(.body) {
+  padding: 0px;
+}
+
+:local(.contactInfo) {
+  display: flex;
+  border-bottom: 1px solid $borderColor;
+  padding: 10px;
+  > .name {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    > div {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      span, input, select {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+:local(.miscInfo) {
+  display: flex;
+  height: 240px;
+  > .grid, > .revenue {
+    padding: 20px 10px;
+    padding-bottom: 60px;
+  }
+  > .grid {
+    flex: 1;
+    @include grid(1fr 1fr);
+    grid-column-gap: 20px;
+    > .item {
+      > span {
+        line-height: 40px;
+      }
+    }
+  }
+  > .revenue {
+    width: 400px;
+    border-left: 1px solid $borderColor;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    > .amount {
+      padding-top: 5px;
+      font-size: 30px;
+      color: black;
+    }
+  }
+}
+
+:local(.notesTab) {
+  padding: 10px;
+  > .header {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  > .visits {
+    border-top: 1px solid $borderColor;
+  }
+}
+
+:local(.scriptsTab) {
+  padding: 10px;
+}
+
+:local(.onlineTab) {
+  padding: 20px 10px;
+  @include grid(30% 30% 30%);
+  grid-row-gap: 20px;
+  justify-content: space-around;
+}

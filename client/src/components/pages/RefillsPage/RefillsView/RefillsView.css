@@ -1,0 +1,10 @@
+.scriptSearch button {
+    -webkit-transition: all 500ms !important;
+    transition: all 500ms !important;
+}
+
+.faxModal > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+    width: 90% !important;
+    overflow: scroll;
+    background: #dddddd !important;
+}

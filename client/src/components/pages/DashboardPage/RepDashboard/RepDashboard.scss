@@ -1,0 +1,36 @@
+@import "scss/variables";
+
+:local(.body) {
+  background-color: #fff;
+  padding: 10px;
+
+  > .expenses {
+    > .header {
+      padding: 0px;
+      > h2 {
+        margin: 0px;
+        margin-bottom: 40px;
+      }
+    }
+
+    > .actions {
+      display: flex;
+      justify-content: space-between;
+      > div {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+        button {
+          min-width: auto;
+        }
+
+        select {
+          width: 200px;
+          @media only screen and (max-width: $smallScreen) {
+            width: 125px;
+          }
+        }
+      }
+    }
+  }
+}

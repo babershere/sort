@@ -1,0 +1,44 @@
+@import "scss/variables";
+
+:local(.header) {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > select {
+    max-width: 200px;
+  }
+
+  > .month {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > .icon {
+      cursor: pointer;
+      background: #fff;
+      @include shadow;
+      height: 42px;
+      width: 42px;
+      font-size: 24px;
+      transition: 150ms;
+      &:hover {
+        background-color: #eee;
+      }
+    }
+    > .display {
+      font-size: 28px;
+      width: 240px;
+      text-align: center;
+    }
+  }
+
+  > .button {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

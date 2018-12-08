@@ -1,0 +1,16 @@
+
+.main {padding: 2%;}
+
+#notesTab table {border-spacing: 15px; margin: 0; box-shadow: none; width: 100%;}
+.nt {margin: 20px auto; box-shadow: 0 1px 2px 0 #afafc5; border-radius: 8px; width: 60%; margin: 2% 0; margin-bottom: 2px;}
+#notesTab thead {background-color: #f7f9fb;}
+#notesTab .userImage {width: 30px; height: 30px;}
+#notesTab th, #notesTab td {text-align: left; padding: 2% 3%; color: red;}
+#notesTab th {display: flex;}
+#notesTab tr {padding: 1%;}
+
+.noteDateTime {font-size: .8em;
+    color: #9fa9b1;}
+.noteDateTime td {padding: 0% !important;}
+
+.noteDateTime td div {display: inline;}

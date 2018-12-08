@@ -1,0 +1,38 @@
+
+.faxModal .flex {
+    display: flex;
+}
+
+.faxModal .flex .flex-col {
+    flex: 1 1;
+    align-items: center;
+    text-align: center;
+}
+
+.infoTable {
+    width: 100%;
+}
+
+.infoTable th {
+    color: #abb0b5;
+    font-weight: lighter;
+    font-size: .9em;
+}
+
+.faxTable {
+    display: block;
+}
+
+.faxTable tbody tr td {
+    white-space: initial !important;
+}
+
+.faxTable .check {display: flex; align-items: center;}
+.faxTable .check input {flex: 1 1;}
+.faxTable .check label {flex: 5 1; margin: 0;}
+
+.signatures {display: flex;}
+.signatures div {flex: 1 1;}
+
+
+
